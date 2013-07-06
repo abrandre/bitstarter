@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
     var buf = new Buffer('index.html');
     //var txt = buf.toString(fs.readFileSync('index.html'));
     response.send(buf.toString(fs.readFileSync('index.html')));
-    //console.log(buf.toString(fs.readFileSync('index.html')));
+    console.log(buf.toString('utf8', fs.readFileSync('index.html')));
 
     //response.send('Hello World2!');
 
