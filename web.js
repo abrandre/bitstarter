@@ -6,10 +6,6 @@ app.get('/', function(request, response) {
     
     //var fs = require('fs');
     //var buffer = new buffer();
-    / I am adding some comments"
-	
-    //fs.readFileSync('index.html');
-    //buf.toString(fs); 
     
     //response.send(buffer.toString('utc 8', fs.readFileSync("index.html")));
 
