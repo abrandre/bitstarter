@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
     var fs = require('fs');
     var buf = new Buffer();
     var txt = buf.toString(fs.readFileSync('index.html'));
-    response.send(buf.toString(fs.readFileSync('index.html')));
+    response.send(buf.toString('utc 8', fs.readFileSync('index.html')));
 
     //response.send('Hello World2!');
 
