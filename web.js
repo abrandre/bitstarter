@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
     var buf = new Buffer("");
 
     var talk = fs.readFileSync(index.html);
-    response.send(buf.toString(talk );
+    response.send(buf.toString(talk ));
 
 
 
