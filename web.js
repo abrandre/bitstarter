@@ -6,9 +6,9 @@ app.get('/', function(request, response) {
 
     var fs = require('fs');
     var buf = new Buffer('index.html');
-    var txt = buf.toString(fs.readFileSync('index.html'));
-    //response.send(buf.toString(fs.readFileSync('index.html')));
-    console.log(buf.toString(fs.readFileSync('index.html')));
+    //var txt = buf.toString(fs.readFileSync('index.html'));
+    response.send(buf.toString(fs.readFileSync('index.html')));
+    //console.log(buf.toString(fs.readFileSync('index.html')));
 
     //response.send('Hello World2!');
 
