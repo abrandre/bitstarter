@@ -5,11 +5,15 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 
     var fs = require('fs');
-    var buf = new Buffer('index.html');
-    //var txt = buf.toString(fs.readFileSync('index.html'));
-    response.send(buf.toString('utf8', fs.readFileSync('index.html')));
-    //console.log(buf.toString('utf8', fs.readFileSync('index.html')));
+    var buf = new Buffer("");
 
+    var talk = fs.readFileSync(index.html);
+    response.send(buf.toString(talk );
+
+
+
+    //var txt = buf.toString('utf-8', fs.readFileSync('index.html'));
+   // console.log(buf.toString( fs.readFileSync("index.html"), "utf-8"));
     //response.send('Hello World2!');
 
 });
