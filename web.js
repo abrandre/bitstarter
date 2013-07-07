@@ -9,15 +9,6 @@ app.get('/', function(request, response) {
 
     response.send(buf.toString());
 
-    //var talk = fs.readFileSync(index.html);
-    //response.send(buf.toString(talk ));
-
-
-
-    //var txt = buf.toString('utf-8', fs.readFileSync('index.html'));
-   // console.log(buf.toString( fs.readFileSync("index.html"), "utf-8"));
-    //response.send('Hello World2!');
-
 });
 
 var port = process.env.PORT || 5000;
