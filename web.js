@@ -5,10 +5,12 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 
     var fs = require('fs');
-    var buf = new Buffer("");
+    var buf = fs.readFileSync("index.html");
 
-    var talk = fs.readFileSync(index.html);
-    response.send(buf.toString(talk ));
+    response.send(buf.toString());
+
+    //var talk = fs.readFileSync(index.html);
+    //response.send(buf.toString(talk ));
 
 
 
@@ -22,3 +24,4 @@ var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+OB
